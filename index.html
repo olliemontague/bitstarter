@@ -80,8 +80,8 @@
       </div>
       <div class="row section1">
         <div class="span12">
-         <p id="demo"></p>
-        <button onclick="myFunction()">Try it</button> 
+         <div id="demo"></div>
+        <button onclick="myFunction()" id="buttontext" /button> 
         </div>
       </div>
       <div class="row section2">
@@ -120,7 +120,7 @@ switch (d)
   }
 document.getElementById("demo").innerHTML=x;
 }
-
+document.getElementById("buttontext").innerHTML="TryIt!!";
 document.getElementById("demo").innerHTML="press the button to see the day";
 </script>
 
