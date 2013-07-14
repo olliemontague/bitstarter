@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
+    	
     <link type="text/css" rel="stylesheet" 
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <style type="text/css">
@@ -63,7 +64,10 @@
       </div>
       <div class="row pitch">
         <div class="span6 video">
-          Video
+          <p> Click the button to call a function <\p>
+          <button onclick="myFunction()">Try it</button>
+          <p id="demo"></p>
+
         </div>
         <div class="span6">
           <div class="thermometer">
@@ -98,5 +102,28 @@
         </div>
       </div>
     </div>
+
+
+<script>
+function myFunction()
+{
+var x;
+var d=new Date().getDay();
+switch (d)
+  {
+  case 6:
+    x="Today it's Saturday";
+    break;
+  case 0:
+    x="Today it's Sunday";
+    break;
+  default:
+    x="Looking forward to the Weekend";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+
   </body>
 </html>
