@@ -127,8 +127,15 @@ function myFunction()
 	    x="Looking forward to the Weekend";
 	  }
 	document.getElementById("demo").innerHTML=x;
-	document.getElementById("buttontext").innerHTML = "Done";
+	document.getElementById("buttontext").innerHTML = "Press to reset";
    	flag1 = 1;
+   }
+   else
+   {
+
+	document.getElementById("demo").innerHTML= Press button to see the date;
+	document.getElementById("buttontext").innerHTML="Press me! ";
+      flag1=0;
    }
 
 }
